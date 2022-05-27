@@ -32,7 +32,7 @@ def main(url, headers):
 
     for i in all_html:
 
-        title = i.find("strong")
+        title = i.find("div", class_="t-name")
         text = i.find_all("li")
 
         subtitles = []
